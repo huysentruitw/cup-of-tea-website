@@ -28,6 +28,12 @@ header {
 
       .btn-primary {
         margin-top: 2rem;
+        padding: .5rem 1.5rem;     
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5) !important;
+      }
+
+      h1, .lead {
+        text-shadow: 0 0 .75rem rgba(0, 0, 0, 1) !important;
       }
     }
   }
