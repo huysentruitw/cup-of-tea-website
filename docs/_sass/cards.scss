@@ -1,0 +1,20 @@
+.open-source-card {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 12rem;
+
+    .card-text:first-of-type {
+      flex-grow: 1;
+    }
+  }
+
+  .btn {
+    font-size: .75rem;
+    padding: .2rem .7rem;
+  }
+}
+
+.card-group > .card {
+  margin-bottom: 1.5rem!important;
+}

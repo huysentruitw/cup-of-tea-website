@@ -1,0 +1,29 @@
+.btn-primary {
+  &, &:visited, &:active, &:focus {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    border-radius: 0;
+    box-shadow: none;
+    text-transform: uppercase;
+    color: white !important;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.2) !important;
+  }
+
+  &:hover {
+    background-color: $primary-color-dark !important;
+    border-color: $primary-color-dark !important;
+  }
+}
+
+.btn-secondary {
+  &, &:visited, &:active, &:focus, &:hover {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: .9rem !important;
+  }
+}
+
+.btn-xl {
+  padding: .5rem 1.5rem;     
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.8) !important;
+}

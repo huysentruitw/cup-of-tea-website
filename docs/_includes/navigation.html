@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="/">Cup of Tea</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        {% for item in page.navigation %}
+          {% if item.url %}
+            {% assign url = item.url %}
+          {% else %}
+            {% assign url = "#" | append: item.id %}
+          {% endif %}
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="{{ url }}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
