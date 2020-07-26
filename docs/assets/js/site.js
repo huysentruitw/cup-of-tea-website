@@ -1,9 +1,9 @@
 function useNavbarCollapsePixelObserver() {
   var navbarCollapsePixel = document.getElementById('navbar-pixel');
   var observer = new IntersectionObserver(function(entries) {
-    var shouldCollapse = !entries[0].isIntersecting;
-    document.querySelector('.navbar.fixed-top').classList.toggle('solid', shouldCollapse);
-    document.getElementById('home-button').classList.toggle('show', shouldCollapse);
+    var atTopOfPage = entries[0].isIntersecting;
+    document.querySelector('.navbar.fixed-top').classList.toggle('solid', !atTopOfPage);
+    document.getElementById('home-button').classList.toggle('show', !atTopOfPage);
   });
   observer.observe(navbarCollapsePixel);
 }
