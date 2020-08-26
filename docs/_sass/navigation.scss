@@ -13,14 +13,22 @@
   color: rgba(255, 255, 255, .7);
 }
 
+.navbar .navbar-brand {
+  display: flex;
+  flex-direction: row;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+
+  img {
+    width: 2.5rem;
+    margin-right: .5rem;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar.fixed-top {
     background-color: rgba(34, 34, 34, .5);
     height: 3.5rem;
-
-    .navbar-brand {
-      text-transform: uppercase;
-    }
 
     &.solid {
       background-color: #ffffff;
@@ -30,8 +38,15 @@
       .navbar-brand {
         color: $primary-color;
         font-size: 1rem;
+        line-height: 2rem;
         transition-property: 'font-size';
         transition-duration: .2s;
+
+        img {
+          width: 2rem;
+          transition-property: 'width', 'height';
+          transition-duration: .2s;
+        }
       }
   
       .nav-item > .nav-link {
