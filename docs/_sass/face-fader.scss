@@ -1,0 +1,10 @@
+.face-fader {
+  position: relative;
+
+  img:last-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
