@@ -1,10 +1,9 @@
 .face-fader {
   position: relative;
 
-  img:last-of-type {
+  img.face-with-beard {
     position: absolute;
     top: 0;
-    left: 0;
     opacity: 0;
   }
 }
