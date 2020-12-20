@@ -53,11 +53,14 @@ open-source-projects:
   <div class="container">
     <div class="row">
       <div class="col-lg-3 text-center">
-        <p class="face-fader">
-          <img src="assets/images/wouter-beard.jpg" class="img-fluid face-with-beard" alt="Foto van eigenaar" style="border-radius: 50%; padding: 1rem; box-shadow: 0 0 5rem rgba(0, 0, 0, .1);" />
-          <img src="assets/images/wouter.jpg" class="img-fluid" alt="Foto van eigenaar" style="border-radius: 50%; padding: 1rem; box-shadow: 0 0 5rem rgba(0, 0, 0, .1);" />
-        </p>
-        <p><a href="https://mvp.microsoft.com/en-us/PublicProfile/5003570?fullName=Wouter%20Huysentruit" target="_blank"><img src="assets/images/logos/mvp-banner.png" alt="MVP banner" style="height: 4rem;"></a></p>
+        <div class="face-fader">
+          <img src="assets/images/wouter-beard.jpg" class="img-fluid face-with-beard" alt="Foto van eigenaar" />
+          <img src="assets/images/wouter.jpg" class="img-fluid" alt="Foto van eigenaar" />
+          <div class="face-fader__slider">
+            <span>#nobeard</span><input type="range" min="0" max="1" step="0.01" value="0" oninput="$('.face-with-beard').css('opacity', this.value)" /><span>#beard</span>
+          </div>
+        </div>
+        <p><a href="https://mvp.microsoft.com/en-us/PublicProfile/5003570?fullName=Wouter%20Huysentruit" target="_blank"><img src="assets/images/logos/mvp-banner.png" alt="MVP banner" height="64"></a></p>
       </div>
       <div class="col-lg-8">
         <h2>Over</h2>
