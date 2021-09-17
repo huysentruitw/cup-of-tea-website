@@ -5,3 +5,6 @@ collections:
 
 sass:
   sass_dir: ./_sass
+
+include:
+  - .well-known
